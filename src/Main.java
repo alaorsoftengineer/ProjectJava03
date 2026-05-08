@@ -6,20 +6,24 @@ public class Main {
      static void main(String[] args) {
 
 
-         // method = a block of reusable code that is executed when called
+         // overloaded methods = methods that share the same name, but different
+         // parameters signature = name + parameters
 
-        String name = "Castelano";
-        int age = 25;
+         String pizza = bakePizza("flat bread", "mozzarella", "pepperoni");
 
-         happyBirthday(name, age);
-     }
+         System.out.println(pizza);
 
-         static void happyBirthday(String name, int age) {
-        System.out.println("Happy Birthday to you! ");
-        System.out.printf("Happy Birthday dear %s! ", name);
-        System.out.printf("You are %d years old!\n", age);
-        System.out.println("Happy Birthday to you!\n ");
+       }
+       static String bakePizza(String bread) {
+           return bread + "pizza";
+       }
+       static String bakePizza(String bread, String cheese) {
+           return cheese + " " + bread + "pizza";
+       }
+       static String bakePizza(String bread, String cheese, String topping) {
+           return cheese + " " + bread + "pizza" + " " + topping;
     }
+
 
 
 
