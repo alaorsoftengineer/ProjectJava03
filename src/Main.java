@@ -5,31 +5,23 @@ import java.util.Scanner;
 public class Main {
      static void main(String[] args) {
 
-      // NUMBER GUESSING GAME
 
-         Random random = new Random();
-         Scanner scanner = new Scanner(System.in);
+         // method = a block of reusable code that is executed when called
 
-         int guess;
-         int attempts = 0;
-         int randomNumber = random.nextInt(1, 11);
+        String name = "Castelano";
+        int age = 25;
 
-         System.out.println("Number Guessing Game");
-         System.out.print("Guess a Number between 1-10");
+         happyBirthday(name, age);
+     }
 
-         do{
-             System.out.print("Enter a Guess: ");
-             guess = scanner.nextInt();
-             attempts++;
-
-         }while (guess != randomNumber);
-
-         System.out.println("You have won! 🤩");
-
-
-        scanner.close();
-
-
-
+         static void happyBirthday(String name, int age) {
+        System.out.println("Happy Birthday to you! ");
+        System.out.printf("Happy Birthday dear %s! ", name);
+        System.out.printf("You are %d years old!\n", age);
+        System.out.println("Happy Birthday to you!\n ");
     }
+
+
+
+
 }
